@@ -3,7 +3,6 @@
 
 # 1. Знакомство
 print('Привет! Я твой личный Фитнес трейкер')
-
 # Сбор данных
 user_name = input('Для начала, введи свое имя: ')
 inuser_age = int(input('Теперь возраст: '))
@@ -14,7 +13,7 @@ try:
 except ValueError:
     print('Ввод не коректен')
     user_weight = float(input('Далее нужен вес(в кг): '))
-try:  
+try:
     user_height = float(input('И в заключение рост в метрах(Пример 1.75): '))
 except ValueError:
     print('Ввод не коректен')
@@ -22,7 +21,7 @@ except ValueError:
 
 
 # 3. Логика расчетов (Функции как "черный ящик": используем арифметику)
-bmi = user_weight / (user_height ** 2) 
+bmi = user_weight / (user_height ** 2)
 
 
 # Подсчет воды: вес * 30 мл
