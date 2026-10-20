@@ -20,7 +20,8 @@ except ValueError:
     user_weight = float(input('Далее нужен вес(в кг): ').replace(',', '.'))
 
 try:
-    user_height = float(input('И в заключение рост в метрах(Пример 1.75): ').replace(',', '.'))
+    user_height = float(input('И в заключение рост в метрах(Пример 1.75): ')
+                        .replace(',', '.'))
 except ValueError:
     print('Ввод не коректен')
     user_height = float(input('Далее нужен вес(в кг): ').replace(',', '.'))
